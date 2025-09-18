@@ -31,6 +31,7 @@ job "elysia-app" {
       config {
         image = "kusumaningrat16/bun-app:v4.2"
         ports = ["http"]
+        network_mode = "host"
       }
 
       env {
